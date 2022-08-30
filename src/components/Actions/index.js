@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import {AntDesign} from '@expo/vector-icons'
+import {AntDesign,Ionicons} from '@expo/vector-icons'
 
 export default function Actions() {
  return (
@@ -39,6 +39,19 @@ export default function Actions() {
                 <AntDesign name="setting" size={26} color="#000"/>
         </View>
         <Text style={styles.labelButton}>Conta</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.actionButton}>
+        <View style={styles.areaButton}>
+                <Ionicons name="bar-chart-outline" size={26} color="#000"/>
+        </View>
+        <Text style={styles.labelButton}>Investimento</Text>
+    </TouchableOpacity>
+
+    <TouchableOpacity style={styles.actionButton}>
+        <View style={styles.areaButton}>
+                <Ionicons name="cash-outline" size={26} color="#000"/>
+        </View>
+        <Text style={styles.labelButton}>PIX</Text>
     </TouchableOpacity>
 
    </ScrollView>
